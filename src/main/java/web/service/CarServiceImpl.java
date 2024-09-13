@@ -26,7 +26,9 @@ public class CarServiceImpl implements CarService {
         if (carCount == 0) {
             return carList;
         } else {
-            return carList.stream().limit(carCount).collect(Collectors.toList());
+            return carList.stream()
+                          .limit(carCount)
+                          .collect(Collectors.toList());
         }
     }
 
