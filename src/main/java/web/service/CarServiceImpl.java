@@ -20,7 +20,6 @@ public class CarServiceImpl implements CarService {
         carList.add(new Car("Land Rover", "Range Rover Evoque", 2013));
     }
 
-
     @Override
     public List<Car> showCars(int carCount) {
         if (carCount == 0) {
